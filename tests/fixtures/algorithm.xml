@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Algorithms>
+  <Catalog Name="CAB">
+    <Alg Name="Test Cabinet" Code="167772193">
+      <Knob Name="Low Cut" idx="0" ID="5" />
+      <Knob Name="High Cut" idx="1" ID="6" />
+      <Knob Name="Volume" idx="2" ID="1" />
+    </Alg>
+  </Catalog>
+</Algorithms>

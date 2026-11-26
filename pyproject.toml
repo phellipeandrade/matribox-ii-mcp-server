@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "matribox-ii-mcp-server"
+version = "0.1.0"
+description = "MCP server for reading and editing Sonicake Matribox II presets over USB MIDI"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{name = "Phellipe Andrade"}]
+keywords = ["mcp", "midi", "sysex", "guitar", "matribox", "presets"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Developers",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
+    "Topic :: Multimedia :: Sound/Audio :: MIDI",
+]
+dependencies = ["mcp>=1.26,<2"]
+
+[project.optional-dependencies]
+dev = ["build>=1.2", "twine>=6"]
+
+[project.scripts]
+matribox-ii-mcp-server = "matribox_ii_mcp.server:main"
+
+[tool.setuptools.packages.find]
+include = ["matribox_ii_mcp*"]

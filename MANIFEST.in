@@ -1,0 +1,5 @@
+include LICENSE README.md CHANGELOG.md CONTRIBUTING.md SECURITY.md
+include research/preset-protocol.md
+recursive-include tests *.py *.json *.xml
+prune research/reports
+prune presets
